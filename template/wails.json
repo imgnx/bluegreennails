@@ -1,5 +1,5 @@
 {
-  "name": "nails-webpack",
+  "name": "{{.Name}}",
   "author": "donaldmoore",
   "description": "Wails + React + Tailwind + OpenAI",
   "frontend": {

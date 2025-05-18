@@ -8,7 +8,7 @@ import (
 func main() {
 	app := NewApp()
 	wails.Run(&options.App{
-		Title:  "nails-webpack",
+		Title:  "{{.Name}}",
 		Width:  1024,
 		Height: 768,
 		Bind: []interface{}{

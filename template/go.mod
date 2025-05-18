@@ -1,3 +1,3 @@
-module github.com/you/nails-webpack
+module github.com/you/{{.Name}}
 
 go 1.21
