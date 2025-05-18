@@ -1,0 +1,7 @@
+{
+  "name": "nails-webpack",
+  "description": "Wails + React + Tailwind (Webpack variant) + OpenAI backend",
+  "author": "Donald Wayne Moore Jr.",
+  "type": "project",
+  "version": "1.0.0"
+}

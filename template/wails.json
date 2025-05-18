@@ -1,0 +1,23 @@
+{
+  "name": "nails-webpack",
+  "author": "donaldmoore",
+  "description": "Wails + React + Tailwind + OpenAI",
+  "frontend": {
+    "dir": "frontend",
+    "build": {
+      "command": "npm run build",
+      "outputDir": "dist"
+    },
+    "dev": {
+      "command": "npm run dev",
+      "port": 5173
+    }
+  },
+  "platform": {
+    "windows": {
+      "webview2": {
+        "strategy": "embedded"
+      }
+    }
+  }
+}
