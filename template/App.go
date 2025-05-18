@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"fmt"
@@ -10,7 +11,7 @@ import (
 )
 
 type OpenAIRequest struct {
-	Model    string   `json:"model"`
+	Model    string    `json:"model"`
 	Messages []Message `json:"messages"`
 }
 
@@ -38,7 +39,7 @@ func (a *App) ChatWithOpenAI(prompt string) (string, error) {
 	}
 	url := "https://api.openai.com/v1/chat/completions"
 	requestBody := OpenAIRequest{
-		Model: "gpt-3.5-turbo",
+		Model:    "gpt-3.5-turbo",
 		Messages: []Message{{Role: "user", Content: prompt}},
 	}
 	jsonBody, err := json.Marshal(requestBody)
